@@ -1,0 +1,189 @@
+/* Qafila legal pages — matches NexGenZ Tech dark theme; works with or without full WP CSS */
+
+.qafila-legal-page {
+  --ngz-bg: #13200c;
+  --ngz-surface: #1a2d14;
+  --ngz-border: rgba(171, 251, 99, 0.22);
+  --ngz-accent: #abfb63;
+  --ngz-text: #b8b8b8;
+  --ngz-heading: #ffffff;
+  --ngz-muted: #8a8a8a;
+  --ngz-max: 820px;
+  font-family: Nunito, system-ui, sans-serif;
+  color: var(--ngz-text);
+  background: var(--ngz-bg);
+  line-height: 1.65;
+}
+
+.qafila-legal-page a {
+  color: var(--ngz-accent);
+  text-decoration: none;
+}
+
+.qafila-legal-page a:hover {
+  text-decoration: underline;
+}
+
+.ngz-site-header,
+.ngz-site-footer {
+  background: var(--ngz-surface);
+  border-bottom: 1px solid var(--ngz-border);
+}
+
+.ngz-site-footer {
+  border-bottom: none;
+  border-top: 1px solid var(--ngz-border);
+  margin-top: 3rem;
+}
+
+.ngz-header-inner,
+.ngz-footer-inner,
+.qafila-legal-main {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 1rem 1.25rem;
+}
+
+.ngz-header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.ngz-logo img {
+  height: 48px;
+  width: auto;
+  display: block;
+}
+
+.ngz-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: Rajdhani, Nunito, sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.ngz-nav a {
+  color: var(--ngz-heading);
+}
+
+.ngz-breadcrumb {
+  font-size: 0.875rem;
+  color: var(--ngz-muted);
+  margin-bottom: 0.5rem;
+}
+
+.qafila-legal-hero {
+  padding: 2.5rem 0 1.5rem;
+  border-bottom: 1px solid var(--ngz-border);
+  margin-bottom: 2rem;
+}
+
+.qafila-legal-hero h1 {
+  font-family: Rajdhani, sans-serif;
+  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-weight: 700;
+  color: var(--ngz-heading);
+  margin: 0 0 0.5rem;
+  line-height: 1.2;
+}
+
+.qafila-legal-hero .subtitle {
+  color: var(--ngz-muted);
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.qafila-legal-main h2 {
+  font-family: Rajdhani, sans-serif;
+  font-size: 1.35rem;
+  color: var(--ngz-heading);
+  margin: 2rem 0 0.75rem;
+  font-weight: 600;
+}
+
+.qafila-legal-main h3 {
+  font-family: Rajdhani, sans-serif;
+  font-size: 1.1rem;
+  color: var(--ngz-heading);
+  margin: 1.5rem 0 0.5rem;
+  font-weight: 600;
+}
+
+.qafila-legal-main p,
+.qafila-legal-main li {
+  font-size: 1rem;
+}
+
+.qafila-legal-main ul {
+  padding-left: 1.25rem;
+}
+
+.qafila-legal-main table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+}
+
+.qafila-legal-main th,
+.qafila-legal-main td {
+  border: 1px solid var(--ngz-border);
+  padding: 0.65rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.qafila-legal-main th {
+  color: var(--ngz-heading);
+  background: rgba(171, 251, 99, 0.06);
+}
+
+.legal-placeholder {
+  display: inline;
+  background: rgba(255, 193, 7, 0.12);
+  border: 1px dashed rgba(255, 193, 7, 0.45);
+  border-radius: 3px;
+  padding: 0.1em 0.35em;
+  color: #e6c200;
+  font-size: 0.92em;
+}
+
+.legal-notice {
+  background: rgba(171, 251, 99, 0.08);
+  border-left: 3px solid var(--ngz-accent);
+  padding: 1rem 1.15rem;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+.ngz-footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  font-size: 0.875rem;
+  color: var(--ngz-muted);
+}
+
+.ngz-footer-inner strong {
+  color: var(--ngz-heading);
+}
+
+@media (max-width: 640px) {
+  .ngz-header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .qafila-legal-hero {
+    padding-top: 1.75rem;
+  }
+}
